@@ -387,7 +387,7 @@ namespace PoissonRecon
 		{
 			static const unsigned int NormalDegree = 2;							// The order of the B-Spline used to splat in the normals for constructing the Laplacian constraints
 			static const unsigned int DefaultFEMDegree = 1;						// The default finite-element degree (has to be at least 1)
-			static const BoundaryType DefaultFEMBoundary = BOUNDARY_NEUMANN;	// The default finite-element boundary type {BOUNDARY_FREE, BOUNDARY_DIRICHLET, BOUNDARY_NEUMANN}
+			static const BoundaryType DefaultFEMBoundary = BOUNDARY_DIRICHLET;	// The default finite-element boundary type {BOUNDARY_FREE, BOUNDARY_DIRICHLET, BOUNDARY_NEUMANN}
 			inline static const float WeightMultiplier = 2.f;					// The default degree-to-point-weight scaling
 
 			template< unsigned int Dim , typename Real >
